@@ -10,6 +10,8 @@ import {
 import App from './App';
 import Home from './container/Home';
 import TodoIndex from './container/todo';
+import TodosIndex from './container/todos';
+import CounterIndex from './container/counter';
 import OrderNew from './container/order/New';
 import OrderList from './container/order/List';
 import './index.css';
@@ -25,6 +27,8 @@ render(
   	        <Route path="/order-new" component={OrderNew}/>
           	<Route path="/order-list" component={OrderList}/>
             <Route path="/todo" component={TodoIndex}/>
+            <Route path="/counter" component={CounterIndex}/>
+            <Route path="/todos" component={TodosIndex}/>
           </App>
       </Router>
     </Provider>,

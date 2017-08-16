@@ -28,8 +28,8 @@ export default class extends Component {
               </SubMenu>
               <SubMenu key="sub2" title={<span><Icon type="laptop" />业务2</span>}>
                 <Menu.Item key="3"><Link to='/todo'>Todo</Link></Menu.Item>
-                <Menu.Item key="4">option4</Menu.Item>
-                <Menu.Item key="5">option5</Menu.Item>
+                <Menu.Item key="4"><Link to='/counter'>Counter</Link></Menu.Item>
+                <Menu.Item key="5"><Link to='/todos'>Todos</Link></Menu.Item>
                 <Menu.Item key="6">option6</Menu.Item>
                 <Menu.Item key="7">option7</Menu.Item>
                 <Menu.Item key="8">option8</Menu.Item>
