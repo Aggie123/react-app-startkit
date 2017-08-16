@@ -59,8 +59,8 @@ function selectTodos(todos, filter) {
 function select(state,ownProps) {
   console.log('select state',state)
   return {
-    visibleTodos: selectTodos(state.todos, state.visibilityFilter),
-    visibilityFilter: state.visibilityFilter
+    visibleTodos: selectTodos(state.todoApp.todos, state.todoApp.visibilityFilter),
+    visibilityFilter: state.todoApp.visibilityFilter
   }
 }
 

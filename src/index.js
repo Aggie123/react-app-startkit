@@ -13,9 +13,9 @@ import TodoIndex from './container/todo';
 import OrderNew from './container/order/New';
 import OrderList from './container/order/List';
 import './index.css';
-import Todo from './reducer/Todo';
+import appReducer from './reducer';
 
-let store = createStore(Todo)
+let store = createStore(appReducer)
 // console.log('ss',store,store.getState())
 render(
   <Provider store={store}>

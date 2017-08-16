@@ -36,9 +36,21 @@ function todos(state = [], action) {
   }
 }
 
+/*const counter(state= { number: 0}, action){
+  swith(action.type){
+    case ADD:
+     return { number: action.number+1 };
+    case MINUS:
+      return { number: action.number-1 };
+  }
+}*/
+
 const todoApp = combineReducers({
   visibilityFilter,
-  todos
+  todos/*,
+  counter*/
 })
+
+
 
 export default todoApp
