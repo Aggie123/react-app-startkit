@@ -4,7 +4,7 @@ export default class OrderList extends Component {
 	render (){
 		return (
 			<div>
-				<p>OrderList</p>
+				<p>OrderList1</p>
 			</div>
 			)
 	}

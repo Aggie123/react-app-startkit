@@ -27,7 +27,7 @@ export default class extends Component {
                 <Menu.Item key="2"><Link to='/order-new'>新增工单</Link></Menu.Item>
               </SubMenu>
               <SubMenu key="sub2" title={<span><Icon type="laptop" />业务2</span>}>
-                <Menu.Item key="3">option3</Menu.Item>
+                <Menu.Item key="3"><Link to='/todo'>Todo</Link></Menu.Item>
                 <Menu.Item key="4">option4</Menu.Item>
                 <Menu.Item key="5">option5</Menu.Item>
                 <Menu.Item key="6">option6</Menu.Item>
