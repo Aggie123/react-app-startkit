@@ -4,6 +4,7 @@ import { Button } from 'antd';
 
 import AddTodo from '../../component/todos/AddTodo';
 import TodoList from '../../component/todos/TodoList';
+import { addTodo } from '../../action/todos';
 
 class Todos extends Component {
 
@@ -12,7 +13,7 @@ class Todos extends Component {
 		let { dispatch, todosApp } =this.props;
 		return (
 			<div>
-				<AddTodo/>
+				<AddTodo onClickAdd={(text)=>dispatch(addTodo(text))}/>
 				<TodoList data={todosApp}/>
 			</div>
 		)

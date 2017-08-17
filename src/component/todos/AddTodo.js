@@ -4,12 +4,21 @@ import { connect } from 'react-redux';
 const FormItem = Form.Item;
 
 class TodosForm extends Component {
-	handleSubmit=()=>{
 
+	handleSubmit=(e)=>{
+		e.preventDefault();
+		let { onClickAdd }=this.props;
+	    this.props.form.validateFields((err, values) => {
+	      if (!err) {
+	        console.log('Received values of form: ', values);
+	        onClickAdd(values.todoItem);
+	      }
+    	});		
 	}
 
 	render (){
-		const { getFieldDecorator, getFieldsError, getFieldError, isFieldTouched, dispatch  } = this.props.form;
+		let { onClickAdd, form }=this.props;
+		const { getFieldDecorator, getFieldsError, getFieldError, isFieldTouched, dispatch  } = form;
 		return (
 			<Form  onSubmit={this.handleSubmit} style={{display:'flex'}}>
 				<FormItem
