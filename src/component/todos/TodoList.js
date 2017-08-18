@@ -1,10 +1,10 @@
 import React, { PropTypes } from 'react'
 
-const TodosList = ({ data }) => {
+const TodosList = ({ data, onClickTodo }) => {
   	return (
 	    <div>
 	    	{
-	    		data.map((item,index)=><p key={index}>{item.text}</p>)
+	    		data.map((item,index)=><p key={index} onClick={()=>onClickTodo(index)}>{item.text}</p>)
 	    	}
 		</div>
 	 )
